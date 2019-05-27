@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+xn=input('Enter the sequence:');
+x=input('Enter the value of N:');
+xk=dftfunction(xn,x);
+k=0:x-1;
+subplot(2,1,1);
+stem(k,abs(xk));
+subplot(2,1,2);
+stem(k,angle(xk));
